@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.7;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../../Downloads/WEBSITE_V2.1_2019-05-10/drafts/images/bg1.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+  cursor: pointer;
+}
+
+ul.a {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.a {
+  background: lightblue;
+  padding: 1px;
+  width: 1195px;
+}
+
+ul.a li {
+  background: white;
+  margin: 3px;
+}
+
+/* Tooltip that helps explain the question */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 800px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  boder-radius: 6px;
+  padding: 5px 0;
+
+  /* Position of the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

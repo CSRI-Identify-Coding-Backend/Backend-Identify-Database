@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html>
+<title>Questionnaire</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="/style.css" rel="stylesheet" type="text/css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.7;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../../Downloads/WEBSITE_V2.1_2019-05-10/drafts/images/bg1.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+  cursor: pointer;
+}
+
+ul.a {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.a {
+  background: lightblue;
+  padding: 1px;
+  width: 1195px;
+}
+
+ul.a li {
+  background: white;
+  margin: 3px;
+}
+
+/* Tooltip that helps explain the question */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 800px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  boder-radius: 6px;
+  padding: 5px 0;
+
+  /* Position of the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+</style>
+	<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+   <a href="index.html" class="w3-bar-item w3-button w3-wide"><img src="images/bg.jpg" alt="LOGO" WIDTH="60" HEIGHT="40"></a>
+    <!-- Right-sided navbar links -->
+     <div class="w3-right w3-hide-small">
+      <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="questionnaire.html" class="w3-bar-item w3-button">QUESTIONNAIRE</a>
+      <a href="contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+	</div>
+
+<body>
+  <div style="overflow: auto; margin-top:45px; margin-left:35px; width:1250px; height:730px">
+ 
+    <h1><b>QUESTIONs</b></h1>
+    <h4>Explanation about the questionnaire, what to do; what to expect...</h4>
+    <p>On the scale from 0 to 5 rated:</p>
+    <ul class="a">
+      <li>0: Incomplete process - The process is not implemented or fails to achieve its purpose.</li>
+      <li>1: Performed process - The implemented process achieves its process purpose.</li>
+      <li>2: Managed process - The level 1 performed process is now implemented in a managed fashion (planned, monitored ans adjusted) and its work products are appropriately established, controlled and maintained.</li>
+      <li>3: Established process - The level 2 managed process is now implemented using a defined process that is capable of achieving its process outcomes.</li>
+      <li>4: Predictable process - The level 3 established process now operates within defined limits to achieve its process outcomes.</li>
+      <li>5: Optimising process - The level 4 predictable process is continuosly improved to meet relavant current and projected business goals.</li>
+    </ul><hr>
+	  
+	  
+<!--	  form start-->
+	  
+	  
+
+	  
+	  
+	 <form action="/questionnaire.php" target="_blank" method="post">
+		 
+		 <!--	  q1 start-->
+		 
+		 
+		 <p class="double">1. How capable is the process for inventorying and auditing physical devices and systems within the organisation?</p>
+		 <div class="tooltip"><i>Explanation of questionnaire (Please hoverover me)</i>
+      <span class="tooltiptext">One way to use scale like this.</span>
+    </div>
+		 <p></p>
+		
+<!--		q1 ui start -->
+		 
+		  <div class="rating">
+      <input type="radio" name="rating1" id="rate10" value="Incomplete_Process" required><div class="tooltip"><label for="rate10">0: Incomplete Process</label><span class="tooltiptext">Our organisation doesn't really have any cybersecurity policy to communicate.</span></div>
+			  <br>
+      <input type="radio" name="rating1"  id="rate11" value="Performed_Process"><div class="tooltip"><label for="rate11">1: Performed Process</label><span class="tooltiptext">Our IT Staff are responsible for cybersecurity, the IT executive writes the policy and the IT Staff implement the technical controls. Users are only mildly aware of cybersecurity, IT do a decent job of protecting them.</span>
+        </div>
+			  <br>
+      <input type="radio" name="rating1" id="rate12" value="Managed_Process"><div class="tooltip"><label for="rate12">2: Managed Process</label>
+        <span class="tooltiptext">We have a user policy that new hires read and sign, it covers basic cybersecurity like password length, two-factor authentication, BYOD requirements and so on. It?s updated occasionally but mainly people sign it once then never see it again.</span>
+        </div><br>
+      <input type="radio" name="rating1" id="rate13" value="Established_Process"><div class="tooltip"><label for="rate13">3: Established Process</label>
+        <span class="tooltiptext">Cybersecurity policy is quite well developed, understood and followed by most employees. Deviations are usually detected. But this policy is updated infrequently and is usually only reviewed after a significant incident or near-miss.</span>
+        </div><br>
+      <input type="radio" name="rating1" id="rate14" value="Predictable_Process"><div class="tooltip"><label for="rate14">4: Predictable Process</label>
+        <span class="tooltiptext">We review and publish our cybersecurity policy regularly, but we don?t have time or the tools to measure its effectiveness. We can detect deviations and enforce the policy, but we aren?t able to perform trend analysis effectively.</span>
+        </div><br>
+      <input type="radio" name="rating1" id="rate5" value="Optimising_Process"><div class="tooltip"><label for="rate5">5: Optimising Process</label>
+        <span class="tooltiptext">We have monthly mandatory cybersecurity training that must be attended to retain system access. This gives a monthly opportunity for any feedback to be gained, included in policy for review the following month. We regularly provide reports to the executive staff on the level of compliance with cybersecurity policy.</span>
+        </div>
+      <hr>
+    </div>
+		 
+<!--		 q1 ui end-->
+		 
+<!--		 end q1-->
+		 
+<!--		 q2 start-->
+		 
+		 <div class="box">
+    <p class="double">2. How capable is the process for inventorying and auditing software and applications within the organisation? (versions, licences, configurations etc)</p>
+      <div class="tooltip"><i>Explanation of questionnaire (Please hoverover me)</i>
+      <span class="tooltiptext">Another way to scale by providing more information about the scale.</span>
+    </div><p></p>
+			 
+			 
+			 
+<!--			 q2 ui start-->
+			 
+    <div class="rating">
+      <input type="radio" name="rating2" id="rate20" value="Incomplete_Process" required><div class="tooltip"><label for="rate20">0: Incomplete Process</label>
+        <span class="tooltiptext">We don't really keep track of all the assets in the organisation. BYOD has basically made this impossible for us.</span>
+        </div><br>
+      <input type="radio" name="rating2" id="rate21" value="Performed_Process"><div class="tooltip"><label for="rate21">1: Performed Process</label>
+        <span class="tooltiptext">Our procurement guy has a system, I'm not sure exactly what it is, but he seems to keep track of everything on a spreadsheet somewhere.</span>
+        </div><br>
+      <input type="radio" name="rating2" id="rate22" value="Managed_Process"><div class="tooltip"><label for="rate22">2: Managed Process</label>
+        <span class="tooltiptext">We have an asset tagging system to help identify new equipment. We brought it in last year and haven't tagged everything yet.</span>
+        </div><br>
+      <input type="radio" name="rating2" id="rate23" value="Established_Process"><div class="tooltip"><label for="rate23">3: Established Process</label>
+        <span class="tooltiptext">Our asset management policy has been in place for a while now and we get only a small number of deviations during the quarterly musters. The assets are tracked well enough, but we still have occurrences of staff members procuring IT equipment outside of the proper channels.</span>
+        </div><br>
+      <input type="radio" name="rating2" id="rate24" value="Predictable_Process"><div class="tooltip"><label for="rate24">4: Predictable Process</label>
+        <span class="tooltiptext">Our asset management policy has been in place for a while now and we get only a small number of deviations during the quarterly musters. Everyone is broadly aware of the IT procurement rules and unidentified assets are reported if seen without an asset tag.</span>
+        </div><br>
+      <input type="radio" name="rating2" id="rate25" value="Optimising_Process"><div class="tooltip"><label for="rate25">5: Optimising Process</label>
+        <span class="tooltiptext">We have an asset management policy that is followed religiously. Each asset is tracked by location and person responsible so it's easy audit. Asset owners check their physical equipment state monthly, with an independent check every quarter.</span>
+        </div>
+      
+    </div>
+			 </div>
+		 <hr>
+		 
+<!--			 q2 ui end-->
+			 
+<!--			 q2 end-->
+		 
+<!--		 q3 start-->
+		 
+		  <div class="box">
+    <p class="double">3. How capable is the knowledge management process is mapping organisational communication and data flows?</p>
+      <div class="tooltip"><i>Explanation of questionnaire (Please hoverover me)</i>
+      <span class="tooltiptext">Scale like this provide a more clearer view of the scale.</span>
+    </div><p></p>
+		 
+		 
+<!--		 q3 ui start-->
+		
+    <div class="rating">
+      <input type="radio" name="rating3" id="rate30" value="Incomplete_Process" required><div class="tooltip"><label for="rate30">0: Incomplete Process</label>
+        <span class="tooltiptext">We don?t have any kind of knowledge management process to map organisational communication and data flows.</span>
+        </div><br>
+      <input type="radio" name="rating3" id="rate31" value="Performed_Process"><div class="tooltip"><label for="rate31">1: Performed Process</label>
+        <span class="tooltiptext">We do have a knowledge management process to map organisational communication and data flows, but only a some of the IT staff are required to be aware of that.</span>
+        </div><br>
+      <input type="radio" name="rating3" id="rate32" value="Managed_Process"><div class="tooltip"><label for="rate32">2: Managed Process</label>
+        <span class="tooltiptext">Each IT employee is required to read a description of our knowledge management process to map organisational communication and data flows upon joining our organisation, but once they have done this, they don?t usually have anything more to do with the knowledge management process.</span>
+        </div><br>
+      <input type="radio" name="rating3" id="rate33" value="Established_Process"><div class="tooltip"><label for="rate33">3: Established Process</label>
+        <span class="tooltiptext">Our knowledge management process in mapping organisational communication and data flows is relatively well know by the majority of our IT employees, but we tend to only update it once we experience or nearly experience a major problem with it.</span>
+        </div><br>
+      <input type="radio" name="rating3" id="rate34" value="Predictable_Process"><div class="tooltip"><label for="rate34">4: Predictable Process</label>
+        <span class="tooltiptext">We review our knowledge management process in mapping organisational communication on regular basis, and implement any updates if necessary, although we don?t have a measure of the process?s effectiveness.</span>
+        </div><br>
+      <input type="radio" name="rating3" id="rate35" value="Optimising_Process"><div class="tooltip"><label for="rate35">5: Optimising Process</label>
+        <span class="tooltiptext">We ensure that all IT employees have a monthly training session regarding our knowledge management process in mapping organisational communication and data flows and ensure that any necessary updates are implemented to the process if required.</span>
+        </div>
+    </div>
+			  </div>
+		 <hr>
+		 
+		 
+		 <!--			 q3 ui end-->
+			 
+<!--			 q3 end-->
+		 
+<!--		 no comment here for question-->
+		 
+		 <div class="box">
+    <p class="double">4. How capable is the process for catalogueing external information systems?</p>
+      <div class="tooltip"><i>Explanation of questionnaire (Please hoverover me)</i>
+      <span class="tooltiptext">Allow client to answer to question effectively using this explanation.</span>
+    </div><p></p>
+    <div class="rating">
+      <input type="radio" name="rating4" id="rate40" value="Incomplete_Process" required><div class="tooltip"><label for="rate40">0: Incomplete Process</label>
+        <span class="tooltiptext">We don?t catalogue external information systems.</span>
+        </div><br>
+      <input type="radio" name="rating4" id="rate41" value="Performed_Process"><div class="tooltip"><label for="rate41">1: Performed Process</label>
+        <span class="tooltiptext">We do have a process for cataloguing external information systems, although it?s unofficial and only some of our IT workers seem to know what that is.</span>
+        </div><br>
+      <input type="radio" name="rating4" id="rate42" value="Managed_Process"><div class="tooltip"><label for="rate42">2: Managed Process</label>
+        <span class="tooltiptext">Our process for cataloguing external information systems is quite effective, with most IT employees having a good understanding of how it works, although it?s unofficial, and we haven?t catalogued every external information system we use.</span>
+        </div><br>
+      <input type="radio" name="rating4" id="rate43" value="Established_Process"><div class="tooltip"><label for="rate43">3: Established Process</label>
+        <span class="tooltiptext">Our process for cataloguing external information systems is very effective, with their only usually being a handful of problems arising if one of the external information systems which haven?t been catalogued is being used, but this is uncommon.</span>
+        </div><br>
+      <input type="radio" name="rating4" id="rate44" value="Predictable_Process"><div class="tooltip"><label for="rate44">4: Predictable Process</label>
+        <span class="tooltiptext">Our process for cataloguing external information systems has been in place for quite a while now, with the majority of our staff having an awareness of it due to it being an official process. While there are some external information systems which are not catalogued, we only use those that are catalogued.</span>
+        </div><br>
+      <input type="radio" name="rating4" id="rate45" value="Optimising_Process"><div class="tooltip"><label for="rate45">5: Optimising Process</label>
+        <span class="tooltiptext">The process we use for cataloguing external information systems is followed religiously, with all external information systems being catalogued.</span>
+        </div>
+    </div>
+		 </div>
+		 
+		 <hr>
+		 
+		 
+
+		 
+		 <div class="box">
+    <p class="double">5. How capable is the process for prioritising resources and services according to their sensitivity, critivality and value?</p>
+      <div class="tooltip"><i>Explanation of questionnaire</i>
+      <span class="tooltiptext">Allow client to answer to question effectively using this explanation.</span>
+    </div><p></p>
+    
+		 
+
+		 
+			 
+			 <div class="rating">
+      <input type="radio" name="rating5" id="rate50" value="Incomplete_Process" required><div class="tooltip"><label for="rate50">0: Incomplete Process</label>
+        <span class="tooltiptext">We don?t have a process for prioritising resources and services according to their sensitivity, criticality and value.</span>
+        </div><br>
+      <input type="radio" name="rating5" id="rate51" value="Performed_Process"><div class="tooltip"><label for="rate51">1: Performed Process</label>
+        <span class="tooltiptext">We do have a process for prioritising resources and services according to their sensitivity, criticality and value, but only the IT workers know what this process is.</span>
+        </div><br>
+      <input type="radio" name="rating5" id="rate52" value="Managed_Process"><div class="tooltip"><label for="rate52">2: Managed Process</label>
+        <span class="tooltiptext">We do ensure that any IT workers which are hired have a basic understanding of our process for prioritising resources and services according to their sensitivity, criticality and value, but only a handful of our IT workers are actually familiar with this process.</span>
+        </div><br>
+      <input type="radio" name="rating5" id="rate53" value="Established_Process"><div class="tooltip"><label for="rate53">3: Established Process</label>
+        <span class="tooltiptext">Our process for prioritising resources and services according to their sensitivity, criticality and value is pretty well developed, understood and followed by most employees. This process is updated on an infrequent basis, essentially when there has been some kind of large-scale problem.</span>
+        </div><br>
+      <input type="radio" name="rating5" id="rate54" value="Predictable_Process"><div class="tooltip"><label for="rate54">4: Predictable Process</label>
+        <span class="tooltiptext">We find our process for prioritising resources and services according to their sensitivity, criticality and value to be quite effective, although we do not really have a measure for how effective it is. The process is updated on a regular basis.</span>
+        </div><br>
+      <input type="radio" name="rating5" id="rate55" value="Optimising_Process"><div class="tooltip"><label for="rate55">5: Optimising Process</label>
+        <span class="tooltiptext">Each month we go over our process for prioritising resources and services according to their sensitivity, criticality and value, and any updates which are being applied to the process, which ensures that those who work with this process have a very good understanding of it.</span>
+        </div>
+    </div>
+		 </div>
+		 
+		 <hr>
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 <div class="box">
+    <p class="double">6. How capable is the role defining process in accounting for Cybersecurity roles and responsibilities? (ie included? Linked to KPIs? Process owners and managers defined?)</p>
+      <div class="tooltip"><i>Explanation of questionnaire</i>
+      <span class="tooltiptext">Allow client to answer to question effectively using this explanation.</span>
+    </div><p></p>
+    <div class="rating">
+      <input type="radio" name="rating6" id="rate60" value="Incomplete_Process" required><div class="tooltip"><label for="rate60">0: Incomplete Process</label>
+        <span class="tooltiptext">We don?t have a role defining process in accounting for cybersecurity roles and responsibilities.</span>
+        </div><br>
+      <input type="radio" name="rating6" id="rate61" value="Performed_Process"><div class="tooltip"><label for="rate61">1: Performed Process</label>
+        <span class="tooltiptext">We do have a role defining process in accounting for cybersecurity roles and responsibilities, although only one/some IT staff know of this process and it is used unregularly.</span>
+        </div><br>
+      <input type="radio" name="rating6" id="rate62" value="Managed_Process"><div class="tooltip"><label for="rate62">2: Managed Process</label>
+        <span class="tooltiptext">Our role defining process in accounting for cybersecurity roles and responsibilities is somewhat effective, but it tends to be used only when we need to address a cybersecurity issue, not before the issue arises.</span>
+        </div><br>
+      <input type="radio" name="rating6" id="rate63" value="Established_Process"><div class="tooltip"><label for="rate63">3: Established Process</label>
+        <span class="tooltiptext">Our role defining process in accounting for cybersecurity roles and responsibilities is relatively effective, although the process usually involves an employee randomly being assigned a cybersecurity role and responsibilities.</span>
+        </div><br>
+      <input type="radio" name="rating6" id="rate64" value="Predictable_Process"><div class="tooltip"><label for="rate64">4: Predictable Process</label>
+        <span class="tooltiptext">Our role defining process in accounting for cybersecurity roles and responsibilities is pretty effective, with the cybersecurity role and responsibilities which are assigned to an employee usually matching their skill set, although if we have a role which doesn?t particularly match an employees skill set, we assign them that role anyway.</span>
+        </div><br>
+      <input type="radio" name="rating6" id="rate65" value="Optimising_Process"><div class="tooltip"><label for="rate65">5: Optimising Process</label>
+        <span class="tooltiptext">Our role defining process in accounting for cybersecurity roles and responsibilities ensures that all cybersecurity roles and responsibilities are suited to whomever is assigned them.</span>
+        </div>
+      </div>
+    </div>
+		<hr>	 
+			 
+			 
+  <div class="box">
+    <p class="double">7. How capable is the service design process in establishing and communicating priorities for organisational mission, objectives and activities?</p>
+      <div class="tooltip"><i>Explanation of questionnaire</i>
+      <span class="tooltiptext">Allow client to answer to question effectively using this explanation.</span>
+    </div><p></p>
+    <div class="rating">
+      <input type="radio" name="rating7" id="rate70" value="Incomplete_Process" required><div class="tooltip"><label for="rate70">0: Incomplete Process</label>
+        <span class="tooltiptext">We don?t have a service design process for establishing and communicating priorities for organisational mission, objectives and activities.</span>
+        </div><br>
+      <input type="radio" name="rating7" id="rate71" value="Performed_Process"><div class="tooltip"><label for="rate71">1: Performed Process</label>
+        <span class="tooltiptext">We do have a service design process for establishing and communicating priorities for organisational mission, objectives and activities, but only one or a few IT staff know what that actually is.</span>
+        </div><br>
+      <input type="radio" name="rating7" id="rate72" value="Managed_Process"><div class="tooltip"><label for="rate72">2: Managed Process</label>
+        <span class="tooltiptext">The service design process that we have in establishing and communicating priorities for organisational mission, objectives and activities is effective a lot of the time, and approximately half of the IT staff are meant to have a basic understanding of what it is, but the process is not always adhered to.</span>
+        </div><br>
+      <input type="radio" name="rating7" id="rate73" value="Established_Process"><div class="tooltip"><label for="rate73">3: Established Process</label>
+        <span class="tooltiptext">The service design process that we have in establishing and communicating priorities for organisational mission, objectives and activities is quite effective, and most IT staff are have an intermediate understanding of what it is, although the process is occasionally not adhered to.</span>
+        </div><br>
+      <input type="radio" name="rating7" id="rate74" value="Predictable_Process"><div class="tooltip"><label for="rate74">4: Predictable Process</label>
+        <span class="tooltiptext">The service design process that we have in establishing and communicating priorities for organisational mission, objectives and activities is very effective, and all IT staff are have an in-depth understanding of what it is, although the process is only updated occasionally.</span>
+        </div><br>
+      <input type="radio" name="rating7" id="rate75" value="Optimising_Process"><div class="tooltip"><label for="rate75">5: Optimising Process</label>
+        <span class="tooltiptext">The service design process that we have in establishing and communicating priorities for organisational mission, objectives and activities is very effective, and all IT staff are have an in-depth understanding of what it is, with the process being updated on a monthly basis.</span>
+        </div>
+      </div>
+    </div>
+	  <hr>
+	  
+		 
+		 
+  <div class="box">
+    <p class="double">8. How capable is the service design process in accounting for the dependencies of critical services?</p>
+      <div class="tooltip"><i>Explanation of questionnaire</i>
+      <span class="tooltiptext">Allow client to answer to question effectively using this explanation.</span>
+    </div><p></p>
+    <div class="rating">
+      <input type="radio" name="rating8" id="rate80" value="Incomplete_Process" required><div class="tooltip"><label for="rate80">0: Incomplete Process</label>
+        <span class="tooltiptext">We don?t have a service design process for accounting for the dependencies of critical services. </span>
+        </div><br>
+      <input type="radio" name="rating8" id="rate81" value="Performed_Process"><div class="tooltip"><label for="rate81">1: Performed Process</label>
+        <span class="tooltiptext">We do have a service design process for accounting for the dependencies of critical services, but only one or a few IT staff know what that actually is. </span>
+        </div><br>
+      <input type="radio" name="rating8" id="rate82" value="Managed_Process"><div class="tooltip"><label for="rate82">2: Managed Process</label>
+        <span class="tooltiptext">The service design process that we have in accounting for the dependencies of critical services is effective a lot of the time, and approximately half of the IT staff are meant to have a basic understanding of what it is, but the process is not always adhered to. </span>
+        </div><br>
+      <input type="radio" name="rating8" id="rate83" value="Established_Process"><div class="tooltip"><label for="rate83">3: Established Process</label>
+        <span class="tooltiptext">The service design process that we have in accounting for the dependencies of critical services is quite effective, and most IT staff are have an intermediate understanding of what it is, although the process is occasionally not adhered to. </span>
+        </div><br>
+      <input type="radio" name="rating8" id="rate84" value="Predictable_Process"><div class="tooltip"><label for="rate84">4: Predictable Process</label>
+        <span class="tooltiptext">The service design process that we have in accounting for the dependencies of critical services is very effective, and all IT staff are have an in-depth understanding of what it is, although the process is only updated occasionally. </span>
+        </div><br>
+      <input type="radio" name="rating8" id="rate85" value="Optimising_Process"><div class="tooltip"><label for="rate85">5: Optimising Process</label>
+        <span class="tooltiptext">The service design process that we have in accounting for the dependencies of critical services is very effective, and all IT staff are have an in-depth understanding of what it is, with the process being updated on a monthly basis. </span>
+        </div>
+       </div>
+    </div>
+	  <hr>
+		 
+	  
+	  
+  <div class="box">
+    <p class="double">9. How capable is the service design process in documenting service resilience requirements? (eg. Under attack, during recovery, normal operations)</p>
+      <div class="tooltip"><i>Explanation of questionnaire</i>
+      <span class="tooltiptext">Allow client to answer to question effectively using this explanation.</span>
+    </div><p></p>
+    <div class="rating">
+      <input type="radio" name="rating9" id="rate90" value="Incomplete_Process" required><div class="tooltip"><label for="rate90">0: Incomplete Process</label>
+        <span class="tooltiptext">We don?t have a service design process for accounting for documenting service resilience requirements. </span>
+        </div><br>
+      <input type="radio" name="rating9" id="rate91" value="Performed_Process"><div class="tooltip"><label for="rate91">1: Performed Process</label>
+        <span class="tooltiptext">We do have a service design process for accounting for documenting service resilience requirements, but only one or a few IT staff know what that actually is. </span>
+        </div><br>
+      <input type="radio" name="rating9" id="rate92" value="Managed_Process"><div class="tooltip"><label for="rate92">2: Managed Process</label>
+        <span class="tooltiptext">The service design process that we have in documenting service resilience requirements is effective a lot of the time, and approximately half of the IT staff are meant to have a basic understanding of what it is, but the process is not always adhered to.</span>
+        </div><br>
+      <input type="radio" name="rating9" id="rate93" value="Established_Process"><div class="tooltip"><label for="rate93">3: Established Process</label>
+        <span class="tooltiptext">The service design process that we have in documenting service resilience requirements is quite effective, and most IT staff are have an intermediate understanding of what it is, although the process is occasionally not adhered to. </span>
+        </div><br>
+      <input type="radio" name="rating9" id="rate94" value="Predictable_Process"><div class="tooltip"><label for="rate94">4: Predictable Process</label>
+        <span class="tooltiptext">The service design process that we have in documenting service resilience requirements is very effective, and all IT staff are have an in-depth understanding of what it is, although the process is only updated occasionally. </span>
+        </div><br>
+      <input type="radio" name="rating9" id="rate95" value="Optimising_Process"><div class="tooltip"><label for="rate95">5: Optimising Process</label>
+        <span class="tooltiptext">The service design process that we have in documenting service resilience requirements is very effective, and all IT staff are have an in-depth understanding of what it is, with the process being updated on a monthly basis. </span>
+        </div>
+      </div>
+    </div>
+	  <hr>
+	  
+	  
+  <div class="box">
+    <p class="double">10. How capable is the training and awareness process for cybersecurity policy within the organisation?</p>
+      <div class="tooltip"><i>Explanation of questionnaire</i>
+      <span class="tooltiptext">Articulates risk advice and sets baseline risk for environment based on ICT usage agreements etc.</span>
+    </div><p></p>
+    <div class="rating">
+      <input type="radio" name="rating10" id="rate100" value="Incomplete_Process" required><div class="tooltip"><label for="rate100">0: Incomplete Process</label>
+        <span class="tooltiptext">There is no evidence within the organisation of cyber security training or policies within the company.</span>
+        </div><br>
+      <input type="radio" name="rating10" id="rate101" value="Performed_Process"><div class="tooltip"><label for="rate101">1: Performed Process</label>
+        <span class="tooltiptext">There is limited evidence within the organisation of cybersecurity training or awareness.</span>
+        </div><br>
+      <input type="radio" name="rating10" id="rate102" value="Managed_Process"><div class="tooltip"><label for="rate102">2: Managed Process</label>
+        <span class="tooltiptext">There is evidence within the organisation of training employees in relation to cybersecurity. However, there is no formalised or documented procedure to complete these tasks and cybersecurity policies present.</span>
+        </div><br>
+      <input type="radio" name="rating10" id="rate103" value="Established_Process"><div class="tooltip"><label for="rate103">3: Established Process</label>
+        <span class="tooltiptext">There is evidence of a written and defined training process and policies relating to cybersecurity within the organisation.</span>
+        </div><br>
+      <input type="radio" name="rating10" id="rate104" value="Predictable_Process"><div class="tooltip"><label for="rate104">4: Predictable Process</label>
+        <span class="tooltiptext">In addition to level 3, measures of compliance in complating and complying to the organisations cybersecurity policies is evident. In addition, issues identified within this process are reviewed and resolved.</span>
+        </div><br>
+      <input type="radio" name="rating10" id="rate105" value="Optimising_Process"><div class="tooltip"><label for="rate105">5: Optimising Process</label>
+        <span class="tooltiptext">In addition to level 4, there is a process which periodicaly reviews the organisations training process and employee awareness of cybersecurity policies. This process is to be quasi automated allowing for the organisation to quickly adapt to new and emergying cybersecurity threats and procedures. </span>
+        </div>
+      </div>
+    </div>
+	  <hr>
+	  
+	  
+	  
+	  
+	  
+  <div class="box">
+    <p class="double">11. How capable is the process for aligning the roles and responsibilities of cybersecurity with existing job titles and roles?</p>
+      <div class="tooltip"><i>Explanation of questionnaire</i>
+      <span class="tooltiptext">Allow client to answer to question effectively using this explanation.</span>
+    </div><p></p>
+    <div class="rating">
+      <input type="radio" name="rating11" id="rate110" value="Incomplete_Process" required><div class="tooltip"><label for="rate110">0: Incomplete Process</label>
+        <span class="tooltiptext">There is no evidence within the organisation of cyber security being within all job descriptions with the company.</span>
+        </div><br>
+      <input type="radio" name="rating11" id="rate111" value="Performed_Process"><div class="tooltip"><label for="rate111">1: Performed Process</label>
+        <span class="tooltiptext">There is limited evidence within the organisation that certain staff members within the company address cybersecurity issues.</span>
+        </div><br>
+      <input type="radio" name="rating11" id="rate112" value="Managed_Process"><div class="tooltip"><label for="rate112">2: Managed Process</label>
+        <span class="tooltiptext">There is evidence within the organisation of cybersecurity roles and responsibilities being completed by certain employees. However, these are not formalised or documented within all job descriptions.</span>
+        </div><br>
+      <input type="radio" name="rating11" id="rate113" value="Established_Process"><div class="tooltip"><label for="rate113">3: Established Process</label>
+        <span class="tooltiptext">There is evidence of written and defined cybersecurity roles and responsibilities within all job descriptions.</span>
+        </div><br>
+      <input type="radio" name="rating11" id="rate114" value="Predictable_Process"><div class="tooltip"><label for="rate114">4: Predictable Process</label>
+        <span class="tooltiptext">In addition to level 3, measures of compliance in employees completing their roles and responsibilities for cybersecurity is evident. In addition, issues identified within this process are reviewed and resolved.</span>
+        </div><br>
+      <input type="radio" name="rating11" id="rate115" value="Optimising_Process"><div class="tooltip"><label for="rate115">5: Optimising Process</label>
+        <span class="tooltiptext">In addition to level 4, there is a process which periodicaly reviews employees roles and responsibilities in relation to cybersecurity. This process is to be quasi automated allowing for the organisation to quickly adapt to new and emergying cybersecurity threats and procesures.</span>
+        </div>
+      </div>
+    </div>
+	  <hr>
+	  
+	  
+	  
+	  
+  <div class="box">
+    <p class="double">12. How capable is the process for analysing business change with cyber specific legal and regulatory requirements?</p>
+      <div class="tooltip"><i>Explanation of questionnaire</i>
+      <span class="tooltiptext">Allow client to answer to question effectively using this explanation.</span>
+    </div><p></p>
+    <div class="rating">
+      <input type="radio" name="rating12" id="rate120" value="Incomplete_Process" required><div class="tooltip"><label for="rate120">0: Incomplete Process</label>
+        <span class="tooltiptext">There is no evidence within the organisation of analysing business changed with cyber specific legal and regulatory requirements.</span>
+        </div><br>
+      <input type="radio" name="rating12" id="rate121" value="Performed_Process"><div class="tooltip"><label for="rate121">1: Performed Process</label>
+        <span class="tooltiptext">There is limited evidence within the organsiation analysising business changes in relation to cyber specific legal and regulartory requirements.</span>
+        </div><br>
+      <input type="radio" name="rating12" id="rate122" value="Managed_Process"><div class="tooltip"><label for="rate122">2: Managed Process</label>
+        <span class="tooltiptext">There is evidence within the organisation of analysing business change with cyber specific legal and regulatory requirements. However, there is no formalised or documented procesure.</span>
+        </div><br>
+      <input type="radio" name="rating12" id="rate123" value="Established_Process"><div class="tooltip"><label for="rate123">3: Established Process</label>
+        <span class="tooltiptext">There is evidence of a written and defined method of analysisng business change with cyber specific legal and regulatory requirements.</span>
+        </div><br>
+      <input type="radio" name="rating12" id="rate124" value="Predictable_Process"><div class="tooltip"><label for="rate124">4: Predictable Process</label>
+        <span class="tooltiptext">In addition to level 3, measures of compliance in using the defined analysing methodologies is evident. In addition, issues identified within this process are reviewed and resolved.</span>
+        </div><br>
+      <input type="radio" name="rating12" id="rate125" value="Optimising_Process"><div class="tooltip"><label for="rate125">5: Optimising Process</label>
+        <span class="tooltiptext">In addition to level 4, there is a process which periodicaly reviews the business to ensure compliance to current, new and revised cyber specific legal and regulatory requirements. This process is to be quasi automated allowing for the organisation to quickly adapt to new or revised legal and regulatory requirements.</span>
+        </div>
+      </div>
+    </div>
+	  <hr>
+	  
+		 
+		 
+	  
+  <div class="box">
+    <p class="double">13. How is the organisational risk management process in addressing the cybersecurity risks of new change requests, proposals, projects and programmes?</p>
+      <div class="tooltip"><i>Explanation of questionnaire</i>
+      <span class="tooltiptext">Allow client to answer to question effectively using this explanation.</span>
+    </div><p></p>
+    <div class="rating">
+      <input type="radio" name="rating13" id="rate130" value="Incomplete_Process" required><div class="tooltip"><label for="rate130">0: Incomplete Process</label>
+        <span class="tooltiptext">There is no evidence within the organisations risks management process which addresses cybersecurity risks of new change requests, proposlas, projects or programs.</span>
+        </div><br>
+      <input type="radio" name="rating13" id="rate131" value="Performed_Process"><div class="tooltip"><label for="rate131">1: Performed Process</label>
+        <span class="tooltiptext">There is limited evidence within the organsiation of risk management processes which address cybersecurity risks of new change requests, proposales, projects or programs. </span>
+        </div><br>
+      <input type="radio" name="rating13" id="rate132" value="Managed_Process"><div class="tooltip"><label for="rate132">2: Managed Process</label>
+        <span class="tooltiptext">There is evidence within the organisation of risk management processes which address cybersecurity risks of new change requests, proposales, projects or progames. However, there is no formalised or documented procedure.</span>
+        </div><br>
+      <input type="radio" name="rating13" id="rate133" value="Established_Process"><div class="tooltip"><label for="rate133">3: Established Process</label>
+        <span class="tooltiptext">There is evidence of a written and defined risk management process which addresses cybersecurity risks of new chage requests, proposales, projects or programs.</span>
+        </div><br>
+      <input type="radio" name="rating13" id="rate134" value="Predictable_Process"><div class="tooltip"><label for="rate134">4: Predictable Process</label>
+        <span class="tooltiptext">In addition to level 3, measures of compliance in the utalisation of the risk management processes is evident. In addition, issues identified within this process is reviewed and resolved.</span>
+        </div><br>
+      <input type="radio" name="rating13" id="rate135" value="Optimising_Process"><div class="tooltip"><label for="rate135">5: Optimising Process</label>
+        <span class="tooltiptext">In addition to level 4, there is a process which periodicaly reviews risk management process in relation to cybersecurity. This process is to be quasi automated allowing for the organisation to quickly adapt to new cybersecurity risks, change requests, proposales, projects and programs.</span>
+        </div>
+     </div>
+	  </div>
+	   <hr>
+	  
+  <div class="box">
+    <p class="double">14. How capable is the process for identifying and documenting asset vulnerabilities?</p>
+      <div class="tooltip"><i>Explanation of questionnaire</i>
+      <span class="tooltiptext">Allow client to answer to question effectively using this explanation.</span>
+    </div><p></p>
+    <div class="rating">
+      <input type="radio" name="rating14" id="rate140" value="Incomplete_Process" required><div class="tooltip"><label for="rate140">0: Incomplete Process</label>
+        <span class="tooltiptext">There is no evidence within the organisation of identifying and documenting asset vulnerabilities.</span>
+        </div><br>
+      <input type="radio" name="rating14" id="rate141" value="Performed_Process"><div class="tooltip"><label for="rate141">1: Performed Process</label>
+        <span class="tooltiptext">There is limited evidence within the organisation of identifying and documenting asset vulnterabilites.</span>
+        </div><br>
+      <input type="radio" name="rating14" id="rate142" value="Managed_Process"><div class="tooltip"><label for="rate142">2: Managed Process</label>
+        <span class="tooltiptext">There is evidence within the organisation of identifying and documenting asset vulnerabilites. However, there is no formalsied process or documented prodecure in completing these tasks.</span>
+        </div><br>
+      <input type="radio" name="rating14" id="rate143" value="Established_Process"><div class="tooltip"><label for="rate143">3: Established Process</label>
+        <span class="tooltiptext">There is evidence of a written and defined process for identifying and documenting asset vulnerabilites.</span>
+        </div><br>
+      <input type="radio" name="rating14" id="rate144" value="Predictable_Process"><div class="tooltip"><label for="rate144">4: Predictable Process</label>
+        <span class="tooltiptext">In addition to level 3, measures of compliance in  identifying and documenting asset vulnerabilites is evident. In addition, issues idenfied within this process are reviewed and resolved.</span>
+        </div><br>
+      <input type="radio" name="rating14" id="rate145" value="Optimising_Process"><div class="tooltip"><label for="rate145">5: Optimising Process</label>
+        <span class="tooltiptext">In addition to level 4, there is a process which preiodicly reviews the processes of identifying and documenting asset vulnerabilities. This process is to be quasi automated allowing for the organisation to quickly adapt to new cyber vulnerabilities.</span>
+        </div>
+     </div>
+	  </div>
+	   <hr>
+	  
+		 
+	  
+  <div class="box">
+    <p class="double">15. How capable s the process for receiving cyber threat intelligence and reviewing relevant portions of environment?</p>
+      <div class="tooltip"><i>Explanation of questionnaire</i>
+      <span class="tooltiptext">Allow client to answer to question effectively using this explanation.</span>
+    </div><p></p>
+    <div class="rating">
+      <input type="radio" name="rating15" id="rate150" value="Incomplete_Process" required><div class="tooltip"><label for="rate150">0: Incomplete Process</label>
+        <span class="tooltiptext">There is no evidence within the organisation of a process of receiving cyber threat intelligence and reviewing relevant portions of the environment from these emerging cyber threats.</span>
+        </div><br>
+      <input type="radio" name="rating15" id="rate151" value="Performed_Process"><div class="tooltip"><label for="rate151">1: Performed Process</label>
+        <span class="tooltiptext">There is limited evidence of the organisation receiving and reviewing cyber threat intelligence.</span>
+        </div><br>
+      <input type="radio" name="rating15" id="rate152" value="Managed_Process"><div class="tooltip"><label for="rate152">2: Managed Process</label>
+        <span class="tooltiptext">There is evidence of the organisation receiving cyber threat intelligence and reviewing this intelligence in relivant potrions of the environment. However, there is no formalised or documented procedure in completing these tasks.</span>
+        </div><br>
+      <input type="radio" name="rating15" id="rate153" value="Established_Process"><div class="tooltip"><label for="rate153">3: Established Process</label>
+        <span class="tooltiptext">There is evidence of a written and defined process of receiving and reviewing cyber threat intelligence.</span>
+        </div><br>
+      <input type="radio" name="rating15" id="rate154" value="Predictable_Process"><div class="tooltip"><label for="rate154">4: Predictable Process</label>
+        <span class="tooltiptext">In addition to level 3, measures of compliance in receiving and reviewing cyber threat intelligence is evident. In addition, issues identified within this processes are reviewed and resolved.</span>
+        </div><br>
+      <input type="radio" name="rating15" id="rate155" value="Optimising_Process"><div class="tooltip"><label for="rate155">5: Optimising Process</label>
+        <span class="tooltiptext">In addition to level 4, there is a process which preiodlicly reviews the process of receiving and reviewing cybre threat intelligence. This process is to be quasi automated allowing for the organisation to quicky adapt to new cybre threat intelligence.</span>
+        </div>
+      </div>
+    </div>
+	  <hr>
+	  
+		 
+	  
+	  
+  <div class="box">
+    <p class="double">16. How capable is the process for identifying and documenting internal and external cybersecurity threats?</p>
+      <div class="tooltip"><i>Explanation of questionnaire</i>
+      <span class="tooltiptext">Allow client to answer to question effectively using this explanation.</span>
+    </div><p></p>
+    <div class="rating">
+      <input type="radio" name="rating16" id="rate160" value="Incomplete_Process" required><div class="tooltip"><label for="rate160">0: Incomplete Process</label>
+        <span class="tooltiptext">There is no evidence within the organisation of a process of identifying and documenting internal and external cybersecurity threats.</span>
+        </div><br>
+      <input type="radio" name="rating16" id="rate161" value="Performed_Process"><div class="tooltip"><label for="rate161">1: Performed Process</label>
+        <span class="tooltiptext">There is limted evidence of the organisation of identifying or documenting internal and external cybersecurity threats.</span>
+        </div><br>
+      <input type="radio" name="rating16" id="rate162" value="Managed_Process"><div class="tooltip"><label for="rate162">2: Managed Process</label>
+        <span class="tooltiptext">There is evidence of the organisation identifying and documenting internal and external cybersecurity threats. However, there is no formalised and documented procesure in completing these tasks.</span>
+        </div><br>
+      <input type="radio" name="rating16" id="rate163" value="Established_Process"><div class="tooltip"><label for="rate163">3: Established Process</label>
+        <span class="tooltiptext">There is evidence of a written and defined process of idenfiying and documenting internal and external cybersecurity threats.</span>
+        </div><br>
+      <input type="radio" name="rating16" id="rate164" value="Predictable_Process"><div class="tooltip"><label for="rate164">4: Predictable Process</label>
+        <span class="tooltiptext">In addition to level 3, measures of compliance in idenfiying and documenting internal and  external cybersecurity threats is evident. In addition, issues identified within this process are reviewed and resolved.</span>
+        </div><br>
+      <input type="radio" name="rating16" id="rate165" value="Optimising_Process"><div class="tooltip"><label for="rate165">5: Optimising Process</label>
+        <span class="tooltiptext">In addition to level 4, there is a process which preiodic reviews occur within the identification and documentation process. This process is to be quasi automated allowed for the organisation to quickly adapt the identification and documentation process to new cyber threats.</span>
+        </div>
+      </div>
+    </div>
+	  <hr>
+	  
+	  
+	  
+		 
+  <div class="box">
+    <p class="double">17. How capable is the organisational risk assessment process in identifying and prioritising responses to risks?</p>
+      <div class="tooltip"><i>Explanation of questionnaire</i>
+      <span class="tooltiptext">Articulates risk advice and sets baseline risk for environment based on ICT usage agreements etc.</span>
+    </div><p></p>
+    <div class="rating">
+      <input type="radio" name="rating17" id="rate170" value="Incomplete_Process" required><div class="tooltip"><label for="rate170">0: Incomplete Process</label>
+        <span class="tooltiptext">There is no evidence within the organisations risk assessment process of identifying and prioritising responses to risks within the company.</span>
+        </div><br>
+      <input type="radio" name="rating17" id="rate171" value="Performed_Process"><div class="tooltip"><label for="rate171">1: Performed Process</label>
+        <span class="tooltiptext">There is limited evidence within the organisations risk assessment process of identifying and prioritising responses to risks within the company.</span>
+        </div><br>
+      <input type="radio" name="rating17" id="rate172" value="Managed_Process"><div class="tooltip"><label for="rate172">2: Managed Process</label>
+        <span class="tooltiptext">There is evidence within the organisations risk assessment process of identifying and prioritising responses to risks within the company.</span>
+        </div><br>
+      <input type="radio" name="rating17" id="rate173" value="Established_Process"><div class="tooltip"><label for="rate173">3: Established Process</label>
+        <span class="tooltiptext"></span>
+        </div><br>
+      <input type="radio" name="rating17" id="rate174" value="Predictable_Process"><div class="tooltip"><label for="rate174">4: Predictable Process</label>
+        <span class="tooltiptext"></span>
+        </div><br>
+      <input type="radio" name="rating17" id="rate175" value="Optimising_Process"><div class="tooltip"><label for="rate175">5: Optimising Process</label>
+        <span class="tooltiptext"></span>
+        </div>
+       </div>
+    </div>
+	  <hr>
+		 
+		 
+		 
+	  
+  <div class="box">
+    <p class="double">18. How capable is the process for identifying, articulating and disseminating organisational risk tolerance relavant to cybersecurity?</p>
+      <div class="tooltip"><i>Explanation of questionnaire</i>
+      <span class="tooltiptext">Allow client to answer to question effectively using this explanation.</span>
+    </div><p></p>
+    <div class="rating">
+      <input type="radio" name="rating18" id="rate180" value="Incomplete_Process" required><div class="tooltip"><label for="rate180">0: Incomplete Process</label>
+        <span class="tooltiptext">There is no evidence of the organisation having a process for identifying, articulating and disseminating organisational risk tolerance relevant to cybersecurity.</span>
+        </div><br>
+      <input type="radio" name="rating18" id="rate181" value="Performed_Process"><div class="tooltip"><label for="rate181">1: Performed Process</label>
+        <span class="tooltiptext">There is limited evidence of the organisation having a process for identifying, articulating and disseminating organisational risk tolerance relevant to cybersecurity.</span>
+        </div><br>
+      <input type="radio" name="rating18" id="rate182" value="Managed_Process"><div class="tooltip"><label for="rate182">2: Managed Process</label>
+        <span class="tooltiptext">There is evidence of the organisation having a process for identifying, articulating and disseminating organisational risk tolerance relevant to cybersecurity.</span>
+        </div><br>
+      <input type="radio" name="rating18" id="rate183" value="Established_Process"><div class="tooltip"><label for="rate183">3: Established Process</label>
+        <span class="tooltiptext"></span>
+        </div><br>
+      <input type="radio" name="rating18" id="rate184" value="Predictable_Process"><div class="tooltip"><label for="rate184">4: Predictable Process</label>
+        <span class="tooltiptext"></span>
+        </div><br>
+      <input type="radio" name="rating18" id="rate185" value="Optimising_Process"><div class="tooltip" ><label for="rate185">5: Optimising Process</label>
+        <span class="tooltiptext"></span>
+        </div>
+      </div>
+    </div>
+	  <hr>
+	  
+	
+	
+	  
+  <div class="box">
+    <p class="double">19. How capable is the organisational risk management process in accounting for cybersecurity likelihoods and impacts of supply chain partner incidents?</p>
+      <div class="tooltip"><i>Explanation of questionnaire</i>
+      <span class="tooltiptext">Allow client to answer to question effectively using this explanation.</span>
+    </div><p></p>
+    <div class="rating">
+      <input type="radio" name="rating19" id="rate190" value="Incomplete_Process" required><div class="tooltip"><label for="rate190">0: Incomplete Process</label>
+        <span class="tooltiptext">There is no evidence within the organisations risk management process in accounting for cybersecurity likelihoods and impacts of supply chain partner incidents.</span>
+        </div><br>
+      <input type="radio" name="rating19" id="rate191" value="Performed_Process"><div class="tooltip"><label for="rate191">1: Performed Process</label>
+        <span class="tooltiptext">There is limited evidence within the organisations risk management process in accounting for cybersecurity liklihoods and impacts of supply chain partner incidents.</span>
+        </div><br>
+      <input type="radio" name="rating19" id="rate192" value="Managed_Process"><div class="tooltip"><label for="rate192">2: Managed Process</label>
+        <span class="tooltiptext">There is evidence within the organisations risk management process in accounting for cybersecurity liklihoods and impacts of supply chain partner incidents.</span>
+        </div><br>
+      <input type="radio" name="rating19" id="rate193" value="Established_Process"><div class="tooltip"><label for="rate193">3: Established Process</label>
+        <span class="tooltiptext"></span>
+        </div><br>
+      <input type="radio" name="rating19" id="rate194" value="Predictable_Process"><div class="tooltip"><label for="rate194">4: Predictable Process</label>
+        <span class="tooltiptext"></span>
+        </div><br>
+      <input type="radio" name="rating19" id="rate195" value="Optimising_Process"><div class="tooltip"><label for="rate195">5: Optimising Process</label>
+        <span class="tooltiptext"></span>
+        </div>
+      </div>
+    </div>
+	  <hr>
+		 
+	  
+	  
+	  
+  <div class="box">
+    <p class="double">20. How capable is the supplier management process in protecting the organisation from supply chain vulnerabilities in new engagements?</p>
+      <div class="tooltip"><i>Explanation of questionnaire</i>
+      <span class="tooltiptext">Allow client to answer to question effectively using this explanation.</span>
+    </div><p></p>
+    <div class="rating">
+      <input type="radio" name="rating20" id="rate200" value="Incomplete_Process" required><div class="tooltip"><label for="rate200">0: Incomplete Process</label>
+        <span class="tooltiptext">There is no evidence within the suppliers management process in protecting the organisation from supply chain vulnerabilities in new engagements.</span>
+        </div><br>
+      <input type="radio" name="rating20" id="rate201" value="Performed_Process"><div class="tooltip"><label for="rate201">1: Performed Process</label>
+        <span class="tooltiptext">There is limited evidence within the suppliers management process in protecting the organisation from supply chain vulnerabilities in new engagements.</span>
+        </div><br>
+      <input type="radio" name="rating20" id="rate202" value="Managed_Process"><div class="tooltip"><label for="rate202">2: Managed Process</label>
+        <span class="tooltiptext">There is evidence within the suppliers management process in protecting the organisation from supply chain vulnerabilities in new engagements.</span>
+        </div><br>
+      <input type="radio" name="rating20" id="rate203" value="Established_Process"><div class="tooltip"><label for="rate203">3: Established Process</label>
+        <span class="tooltiptext"></span>
+        </div><br>
+      <input type="radio" name="rating20" id="rate204" value="Predictable_Process"><div class="tooltip"><label for="rate204">4: Predictable Process</label>
+        <span class="tooltiptext"></span>
+        </div><br>
+      <input type="radio" name="rating20" id="rate205" value="Optimising_Process"><div class="tooltip"><label for="rate205">5: Optimising Process</label>
+        <span class="tooltiptext"></span>
+        </div>
+      </div>
+    </div>
+	  <hr>
+	  
+		 
+		 
+		 
+	  
+	  
+  <div class="box">
+    <p class="double">21. How capable is the supplier review process in measuring and articulating cybersecurity requirements and performance metrics?</p>
+      <div class="tooltip"><i>Explanation of questionnaire</i>
+      <span class="tooltiptext">Allow client to answer to question effectively using this explanation.</span>
+    </div><p></p>
+    <div class="rating">
+      <input type="radio" name="rating21" id="rate210" value="Incomplete_Process" required><div class="tooltip"><label for="rate210">0: Incomplete Process</label>
+        <span class="tooltiptext">There is no evidence within the supplier review process in measuring and articulating cybersecurity requirements and performance metrics.</span>
+        </div><br>
+      <input type="radio" name="rating21" id="rate211" value="Performed_Process"><div class="tooltip"><label for="rate211">1: Performed Process</label>
+        <span class="tooltiptext">There is limited evidence within the supplier review process in measuring and articulating cybersecurity requirements and performance metrics.</span>
+        </div><br>
+      <input type="radio" name="rating21" id="rate212" value="Managed_Process"><div class="tooltip"><label for="rate212">2: Managed Process</label>
+        <span class="tooltiptext">There is evidence within the supplier review process in measuring and articulating cybersecurity requirements and performance metrics.</span>
+        </div><br>
+      <input type="radio" name="rating21" id="rate213" value="Established_Process"><div class="tooltip"><label for="rate213">3: Established Process</label>
+        <span class="tooltiptext"></span>
+        </div><br>
+      <input type="radio" name="rating21" id="rate214" value="Predictable_Process"><div class="tooltip"><label for="rate214">4: Predictable Process</label>
+        <span class="tooltiptext"></span>
+        </div><br>
+      <input type="radio" name="rating21" id="rate215" value="Optimising_Process"><div class="tooltip"><label for="rate215">5: Optimising Process</label>
+        <span class="tooltiptext"></span>
+        </div>
+      </div>
+    </div>
+	  <hr>
+	  
+		 
+		 
+	  
+	  
+   <div class="box">
+    <p class="double">22. How capable is the business continuity process in continuing business activities in the event that a supplier experiences a cybersecurity incident?</p>
+      <div class="tooltip"><i>Explanation of questionnaire</i>
+      <span class="tooltiptext">Allow client to answer to question effectively using this explanation.</span>
+    </div><p></p>
+    <div class="rating">
+      <input type="radio" name="rating22" id="rate220" value="Incomplete_Process" required><div class="tooltip"><label for="rate220">0: Incomplete Process</label>
+        <span class="tooltiptext">There is no evidence within the business continuity process in continuing business activities in the event that a supplier experiences a cybersecurity incident.</span>
+        </div><br>
+      <input type="radio" name="rating22" id="rate221" value="Performed_Process"><div class="tooltip"><label for="rate221">1: Performed Process</label>
+        <span class="tooltiptext">There is limited evidence within the business continuity process in continuing business activities in the event that a supplier experiences a cybersecurity incident.</span>
+        </div><br>
+      <input type="radio" name="rating22" id="rate222" value="Managed_Process"><div class="tooltip"><label for="rate222">2: Managed Process</label>
+        <span class="tooltiptext">There is evidence within the business continuity process in continuing business activities in the event that a supplier experiences a cybersecurity incident.</span>
+        </div><br>
+      <input type="radio" name="rating22" id="rate223" value="Established_Process"><div class="tooltip"><label for="rate223">3: Established Process</label>
+        <span class="tooltiptext"></span>
+        </div><br>
+      <input type="radio" name="rating22" id="rate224" value="Predictable_Process"><div class="tooltip"><label for="rate224">4: Predictable Process</label>
+        <span class="tooltiptext"></span>
+        </div><br>
+      <input type="radio" name="rating22" id="rate225" value="Optimising_Process"><div class="tooltip"><label for="rate225">5: Optimising Process</label>
+        <span class="tooltiptext"></span>
+        </div>
+      </div>
+    </div>
+	   <hr>
+	   
+	   
+	   
+	   
+   <div class="box">
+    <p class="double">23. How capable is the process for engaging with thrid parties when conducting cyber disaster reponse testing and planning?</p>
+      <div class="tooltip"><i>Explanation of questionnaire</i>
+      <span class="tooltiptext">Allow client to answer to question effectively using this explanation.</span>
+    </div><p></p>
+    <div class="rating">
+      <input type="radio" name="rating23" id="rate230" value="Incomplete_Process" required><div class="tooltip"><label for="rate230">0: Incomplete Process</label>
+        <span class="tooltiptext">There is no evidence of?a?process for engaging with third parties when conducting cyber disaster response testing and planning.</span>
+        </div><br>
+      <input type="radio" name="rating23" id="rate231" value="Performed_Process"><div class="tooltip"><label for="rate231">1: Performed Process</label>
+        <span class="tooltiptext">There is limted evidence of a process for engaging with third parties when conducting cyber disaster response testing and planning.</span>
+        </div><br>
+      <input type="radio" name="rating23" id="rate232" value="Managed_Process"><div class="tooltip"><label for="rate232">2: Managed Process</label>
+        <span class="tooltiptext">There is evidence of a process for engaging with third parties when conducting cyber disaster response testing and planning.</span>
+        </div><br>
+      <input type="radio" name="rating23" id="rate233" value="Established_Process"><div class="tooltip"><label for="rate233">3: Established Process</label>
+        <span class="tooltiptext"></span>
+        </div><br>
+      <input type="radio" name="rating23" id="rate234" value="Predictable_Process"><div class="tooltip"><label for="rate234">4: Predictable Process</label>
+        <span class="tooltiptext"></span>
+        </div><br>
+      <input type="radio" name="rating23" id="rate235" value="Optimising_Process"><div class="tooltip"><label for="rate235">5: Optimising Process</label>
+        <span class="tooltiptext"></span>
+        </div><br>
+      </div>
+    </div>
+	   <hr>
+		 
+		 
+<!--		 end question-->
+		 
+		 
+<!--		 button start-->
+		 
+		 
+		 <button class="w3-container; w3-button w3-light-grey; fa fa-paper-plane"     name="submit" value="Submit">SUBMIT QUESTIONNAIRE</button>
+		 
+		 
+		 <button class="w3-container; w3-button w3-light-grey; fa fa-paper-plane"     name="reset" value="Reset" >Reset</button>
+		 
+		 
+<!--		 button end-->
+		 
+		  <p></p>
+		 
+		 </form>
+	 
+<!--	form end-->
+	
+	</div>
+</body>
+	
+	
+	
+	
+	
+
+</html>

@@ -1,0 +1,62 @@
+-- phpMyAdmin SQL Dump
+-- version 4.8.5
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost:3306
+-- Generation Time: May 16, 2019 at 10:31 AM
+-- Server version: 5.7.25
+-- PHP Version: 7.3.1
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Database: `sit302`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contact`
+--
+
+CREATE TABLE `contact` (
+  `Name` varchar(50) NOT NULL,
+  `Email` varchar(50) NOT NULL,
+  `Subject` varchar(50) NOT NULL,
+  `Message` varchar(300) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `questionnaire`
+--
+
+CREATE TABLE `questionnaire` (
+  `rating1` varchar(30) NOT NULL,
+  `rating2` varchar(30) NOT NULL,
+  `rating3` varchar(30) NOT NULL,
+  `rating4` varchar(30) NOT NULL,
+  `rating5` varchar(30) NOT NULL,
+  `rating6` varchar(30) NOT NULL,
+  `rating7` varchar(30) NOT NULL,
+  `rating8` varchar(30) NOT NULL,
+  `rating9` varchar(30) NOT NULL,
+  `rating10` varchar(30) NOT NULL,
+  `rating11` varchar(30) NOT NULL,
+  `rating12` varchar(30) NOT NULL,
+  `rating13` varchar(30) NOT NULL,
+  `rating14` varchar(30) NOT NULL,
+  `rating15` varchar(30) NOT NULL,
+  `rating16` varchar(30) NOT NULL,
+  `rating17` varchar(30) NOT NULL,
+  `rating18` varchar(30) NOT NULL,
+  `rating19` varchar(30) NOT NULL,
+  `rating20` varchar(30) NOT NULL,
+  `rating21` varchar(30) NOT NULL,
+  `rating22` varchar(30) NOT NULL,
+  `rating23` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
